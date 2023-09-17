@@ -1,0 +1,158 @@
+:root{
+    --primarycolor1: hsl(212, 21%, 14%);
+    --primarycolor2: hsl(228, 12%, 48%);
+    --primarycolor3: hsl(0, 0%, 100%);
+    --Dark-cyan: hsl(158, 36%, 37%);
+    --Cream: hsl(30, 38%, 92%);
+    --Font-size-paragraph: 14px;
+}
+
+.project{
+    display: flex;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: var(--Cream);
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: var(--Font-size-paragraph);
+    font-family: 'montserrat', sans-serif;
+}
+
+img{
+    width: 100%;
+    max-width: 270px;
+    border-radius: 30px 0 0 30px;
+}
+
+.text{
+    flex: 1;
+    width: 260px;
+    margin-bottom: 4px;
+    background-color: var(--primarycolor3);
+    border-radius: 0 30px 30px 0;
+}
+
+.text h6{
+    margin: 30px 0 0 20px;
+    text-align: start;
+    letter-spacing: 8px;
+    text-transform: uppercase;
+    font-size: 0.6em;
+    font-weight: 400;
+    color: var(--primarycolor2);
+}
+
+.text h1{
+    text-align: start;
+    margin: 17px 0 0 20px;
+    font-weight: 500;
+    color: var(--primarycolor1);
+}
+
+.text p{
+    font-size: 1em;
+    color: var(--primarycolor2);
+    text-align: start;
+    margin: 10px 0 0 20px;
+    font-weight: 500;
+}
+
+.sale h1{
+    font-size: 2.2em;
+    font-weight: 900;
+    color: var(--Dark-cyan);
+}
+
+.sale h4{
+    margin-left: 20px;
+    position: relative;
+    bottom: 25px;
+    left: 60px;
+    font-size: medium;
+    color: var(--primarycolor2);
+}
+
+.card{
+    display: flex;
+    background: var(--Dark-cyan);
+    width: 200px;
+    margin:10px 20px 0 30px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.card i{
+    color: white;
+    position: relative;
+    top: 12px;
+    left: 30px;
+}
+
+.card h1{
+    font-size: 1.5em;
+    position: relative;
+    bottom: 10px;
+    left: 20px;
+    color: white;
+}
+
+@media (max-width: 375px) {
+    .project {
+        flex-direction: row;
+    }
+
+    img {
+        width: 270px;
+        border-radius: 30px 0px 0 30px;
+    }
+
+    .text {
+        width: 230px;
+        border-radius: 0 30px 30px 0px;
+    }
+
+    .text h6,
+    .text h1,
+    .text p {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .card,
+    .sale h4 {
+        margin-left: 20px;
+    }
+}
+@media (max-width: 375px) and (height: 812px) {
+    img {
+    margin-top: 30px;
+    }
+
+    .text {
+        margin: 30px;
+    }
+
+    .text h6,
+    .text h1,
+    .text p {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .card,
+    .sale h4 {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+}
